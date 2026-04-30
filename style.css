@@ -1,0 +1,73 @@
+/* center box thing */
+.box {
+      border: 2px solid rgb(0, 0, 0);
+  border-radius: 0.5em;
+  font: 1.2em sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  height: 400px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bigtitlething {
+  text-align: center;
+}
+.sidetext {
+  text-align: left;
+  color: #924ab9;
+}
+.rightsidetext {
+  text-align: right;
+  color: #924ab9;
+}
+/* fonts down here */
+.supermercado {
+  font-family: "Supermercado One";
+}
+.poppins {
+  font-family: "Poppins";
+}
+.sekuya {
+  font-family: "Sekuya";
+}
+.bitcount {
+  font-family: "Bitcount Grid Double"
+}
+/* text colors*/
+
+/* css animations & keyframes i guess */
+.animated-gradient /* background thing */ {
+  background: linear-gradient(-45deg, #fff, #924ab9);
+  background-size: 400% 400%; 
+  animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.text-gradient {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #41699a, #924ab9);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: move-gradient 2s linear infinite alternate;
+}
+
+@keyframes move-gradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* background stuff dw */
+audio { 
+  display:none; 
+}
